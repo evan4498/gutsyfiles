@@ -1,0 +1,75 @@
+{
+    "name": "Gutsy",
+    "description": "Gutsy makes dashboards from devop.json files.",
+    "devops_version": "0.2",
+    "devopsJSON_URL": "https://github.com/Racker/gutsy/edit/master/devops.json",
+    "tags": [
+        "node",
+        "dashboard"
+    ],
+    "contacts": [
+        {
+            "team_name": "Operations",
+            "members": [
+                {
+                    "name": "Matt Kaniaris",
+                    "sso": "matt4795",
+                    "github": "kans",
+                    "mailto": "matthew.kaniaris@rackspace.com",
+                    "ircnick": "kansface"
+                },
+                {
+                    "name": "Lucy Mendel",
+                    "sso": "lucy.mendel",
+                    "github": "diN0bot",
+                    "mailto": "lucy.mendel@rackspace.com",
+                    "ircnick": "diN0bot"
+                },
+                {
+                    "name": "Felix Sargent (Community Manager)",
+                    "sso": "felix.sargent",
+                    "github": "http://github.com/fsargent",
+                    "mailto": "felix.sargent@rackspace.com",
+                    "ircnick": "fsargent"
+                }
+            ]
+        }
+    ],
+    "links": {
+        "Site - Example": "http://gutsy.nodejitsu.com/",
+        "Chat": "irc://irc.freenode.net:4443/gutsy",
+        "Email List": "mailto:gutsy@lists.rackspace.com",
+        "Code": "https://github.com/racker/gutsy",
+        "Bug Tracker and Roadmap": "https://github.com/racker/gutsy/issues"
+    },
+    "dependent_services": ["highscores"],
+    "environments": [
+        {
+            "type": "Production",
+            "platforms": [
+                "Ubuntu 10.04"
+            ],
+            "regions": [],
+            "url": {
+                "url": ""
+            }
+        }
+    ],
+    "related_apis": {
+        "ruok": {
+            "Production": {
+                "ORD": "http://dashboard.rax.io:8000/gutsy.json"
+            }
+        },
+        "github": {
+            "url": "https://api.github.com",
+            "org": "racker",
+            "repo": "gutsy",
+            "username": "racker-api",
+            "apikey": "__external__"
+        },
+        "highscores": {
+            "project": "gutsy"
+        }
+    }
+}
